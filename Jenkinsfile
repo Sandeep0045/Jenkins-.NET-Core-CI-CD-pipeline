@@ -28,7 +28,7 @@ pipeline {
             steps {
               sh """
               cd ${WORKSPACE}/WebApplication/bin/Release
-              /bin/jfrog rt u netcoreapp3.1  dotnetcore/   --url http://34.141.137.211:8081
+              /bin/jfrog rt u netcoreapp3.1/  dotnetcore/   --url http://34.141.137.211:8082/artifactory --user admin --password Emids9211!
                """
 }
 }
