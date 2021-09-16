@@ -28,7 +28,7 @@ pipeline {
             steps {
               sh """
               cd ${WORKSPACE}/WebApplication/bin/Release
-              /bin/nuget push netcoreapp3.1  -Source http://34.141.137.211:8081/artifactory/api/nuget/dotnetproject    
+              /bin/nuget push netcoreapp3.1  -Source http://34.141.137.211:8081/artifactory/dotnetcore    
                """
 }
 }
