@@ -29,7 +29,7 @@ pipeline {
                sh 'dotnet publish WebApplication/WebApplication.csproj --configuration Release --no-restore'
              }
         }
-        stage('Publish') {
+        stage('Push') {
             steps {
               sh """
               cd ${WORKSPACE}/bin/Debug
