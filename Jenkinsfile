@@ -27,7 +27,7 @@ pipeline {
         stage('Push') {
             steps {
               sh """
-              cd ${WORKSPACE}/bin/Debug
+              cd ${WORKSPACE}/WebApplication/bin/Release
               /bin/nuget push *.nupkg  -Source http://34.141.137.211:8081/artifactory/api/nuget/dotnetproject    
                """
 }
