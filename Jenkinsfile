@@ -28,8 +28,8 @@ pipeline {
             steps {
               sh """
               cd ${WORKSPACE}/WebApplication/bin/Release
-              tar -cvzf netcoreapp3_1.tar netcoreapp3.1
-              /bin/jfrog rt u netcoreapp3_1.tar  dotnetcore/   --url http://34.141.137.211:8082/artifactory --user admin --password Emids9211!
+              /bin/zip -r netcoreapp3_1.zip netcoreapp3.1/
+              /bin/jfrog rt u netcoreapp3_1.zip  dotnetcore/   --url http://34.141.137.211:8082/artifactory --user admin --password Emids9211!
                """
 }
 }
